@@ -1,4 +1,10 @@
 Quaste::Application.routes.draw do
+  root :to=> "pastes/index"
+
+  get "pastes/index"
+  get "pastes/new"
+  get "pastes/create"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
