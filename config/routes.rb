@@ -1,12 +1,12 @@
 Quaste::Application.routes.draw do
 
-  get "paste/new"
+  get 'pastes/new'
+  get 'pastes/create'
+  get 'pastes/show'
+  resources :pastes
+  match ':permalink' => 'pastes#show'
+  root :to => "pastes#new"
 
-  get "paste/create"
-
-  get "paste/show"
-
-  root :to => "paste#new"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

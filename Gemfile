@@ -14,6 +14,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'rb-fsevent'
+gem 'growl_notify'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
